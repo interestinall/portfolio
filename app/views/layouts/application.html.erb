@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Grievr</title>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Justin LeFurjah's Portfolio</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar">
+    &#9776;
+  </button>
+  <a class="hidden-md-up navbar-brand navbar-right hidden-sm-up">Portfolio</a>
+  <div class="collapse navbar-toggleable-xs navbar-collapse" id="navbar">
+    <a class="navbar-brand hidden-xs-down " href="#">Portfolio</a>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Links</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <%= yield %>
 
 </body>
-</html>
+
+
+
+
+<!-- jQuery first, then Bootstrap JS. -->
